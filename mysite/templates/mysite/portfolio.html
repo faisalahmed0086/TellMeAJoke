@@ -1,0 +1,44 @@
+{% extends 'mysite/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container" style="margin-top: 100px">
+        <div class="card-deck">
+            <div class="card">
+                <img src="{% static 'mysite/images/sc.jpg' %}" class="card-img-top" alt="Card image caption">
+                <div class="card-body">
+                    <h5 class="card-title">Success</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                    <p class="card-text">
+                        <small class="text-muted">Website link</small>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'mysite/images/hz.jpg' %}" class="card-img-top" alt="Card image caption">
+                <div class="card-body">
+                    <h5 class="card-title">Horizon</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                        content.</p>
+                    <p class="card-text">
+                        <small class="text-muted">Website link</small>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'mysite/images/nt.jpg' %}" class="card-img-top" alt="Card image caption">
+                <div class="card-body">
+                    <h5 class="card-title">Nature</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text">
+                        <small class="text-muted">Website link</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
